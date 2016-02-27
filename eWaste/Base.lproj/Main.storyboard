@@ -86,16 +86,9 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mt-D3-zZK">
                                 <rect key="frame" x="66" y="114" width="49" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.93964741490000003" green="0.38832193339999999" blue="0.1287092205" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKI-cQ-KCI">
-                                <rect key="frame" x="0.0" y="0.0" width="73" height="30"/>
-                                <state key="normal" title="Points Info"/>
-                                <connections>
-                                    <segue destination="G2B-Hr-F6G" kind="show" id="lSt-aK-1zH"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyA-h5-ElR">
                                 <rect key="frame" x="66" y="164" width="110" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -114,13 +107,42 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mainP" translatesAutoresizingMaskIntoConstraints="NO" id="ghz-Cn-P8o" customClass="MainPercentageBar" customModule="eWaste" customModuleProvider="target">
+                                <rect key="frame" x="66" y="345" width="240" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="9AD-j1-Gcu"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BSD-zx-MBz" customClass="MainDislikeBar" customModule="eWaste" customModuleProvider="target">
+                                <rect key="frame" x="66" y="345" width="158" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="cF1-8I-G1X"/>
+                                    <constraint firstAttribute="height" constant="35" id="pL8-ve-e6x"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKI-cQ-KCI">
+                                <rect key="frame" x="210" y="458" width="181" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="C7g-Bq-DEE"/>
+                                </constraints>
+                                <state key="normal" title="Points Info"/>
+                                <connections>
+                                    <segue destination="G2B-Hr-F6G" kind="show" id="lSt-aK-1zH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ghz-Cn-P8o" firstAttribute="top" secondItem="VK8-hP-6xd" secondAttribute="bottom" constant="71" id="58c-6M-4rI"/>
                             <constraint firstItem="VK8-hP-6xd" firstAttribute="top" secondItem="6ll-yE-3wy" secondAttribute="bottom" constant="21" id="6aG-6C-4CL"/>
                             <constraint firstItem="yyA-h5-ElR" firstAttribute="leading" secondItem="Wai-iI-KEu" secondAttribute="leadingMargin" constant="46" id="7e9-bj-WXy"/>
                             <constraint firstItem="6ll-yE-3wy" firstAttribute="top" secondItem="yyA-h5-ElR" secondAttribute="bottom" constant="26" id="H0B-jg-cLX"/>
+                            <constraint firstItem="jKI-cQ-KCI" firstAttribute="top" secondItem="BSD-zx-MBz" secondAttribute="bottom" constant="78" id="Rg8-La-zSh"/>
+                            <constraint firstItem="BSD-zx-MBz" firstAttribute="top" secondItem="21h-6Z-cXI" secondAttribute="bottom" constant="281" id="c4b-4x-UfH"/>
+                            <constraint firstItem="jKI-cQ-KCI" firstAttribute="centerX" secondItem="Wai-iI-KEu" secondAttribute="centerX" id="e6c-mI-092"/>
                             <constraint firstItem="yyA-h5-ElR" firstAttribute="top" secondItem="6mt-D3-zZK" secondAttribute="bottom" constant="26" id="fR8-Se-uZg"/>
+                            <constraint firstItem="BSD-zx-MBz" firstAttribute="leading" secondItem="Wai-iI-KEu" secondAttribute="leadingMargin" constant="46" id="iwc-qB-hP1"/>
+                            <constraint firstItem="ghz-Cn-P8o" firstAttribute="leading" secondItem="Wai-iI-KEu" secondAttribute="leadingMargin" constant="46" id="j0R-Jw-Aog"/>
                             <constraint firstItem="VK8-hP-6xd" firstAttribute="leading" secondItem="Wai-iI-KEu" secondAttribute="leadingMargin" constant="46" id="nfv-UH-Kc0"/>
                             <constraint firstItem="6mt-D3-zZK" firstAttribute="leading" secondItem="Wai-iI-KEu" secondAttribute="leadingMargin" constant="46" id="pAV-F1-qd1"/>
                             <constraint firstItem="6mt-D3-zZK" firstAttribute="top" secondItem="21h-6Z-cXI" secondAttribute="bottom" constant="50" id="ppn-A1-xx1"/>
@@ -129,6 +151,8 @@
                     </view>
                     <connections>
                         <outlet property="locationName" destination="6mt-D3-zZK" id="1Yh-CN-Bkv"/>
+                        <outlet property="mainDislikeBarOutlet" destination="BSD-zx-MBz" id="LMJ-WA-AHE"/>
+                        <outlet property="mainLikeBarOutlet" destination="ghz-Cn-P8o" id="GqA-ti-ZCv"/>
                         <outlet property="points" destination="yyA-h5-ElR" id="zp0-3v-fPj"/>
                         <outlet property="requiredPoints" destination="6ll-yE-3wy" id="5lv-S1-6rg"/>
                         <outlet property="rewardText" destination="VK8-hP-6xd" id="N4T-5Q-7Vh"/>
@@ -136,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6K4-lk-v84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1745" y="278"/>
+            <point key="canvasLocation" x="1729" y="278"/>
         </scene>
         <!--Info Points View Controller-->
         <scene sceneID="ydD-Xp-EQF">
@@ -237,5 +261,6 @@
     </scenes>
     <resources>
         <image name="e_waste" width="160" height="157"/>
+        <image name="mainP" width="300" height="260"/>
     </resources>
 </document>

@@ -16,6 +16,8 @@
 		9DF9FEF81C81451700A695C2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9FEF71C81451700A695C2 /* LocationViewController.swift */; };
 		9DF9FEFA1C81608300A695C2 /* PointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9FEF91C81608300A695C2 /* PointsViewController.swift */; };
 		9DF9FEFC1C81608F00A695C2 /* InfoPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9FEFB1C81608F00A695C2 /* InfoPointsViewController.swift */; };
+		9DF9FF011C81D69D00A695C2 /* MainPercentageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9FF001C81D69D00A695C2 /* MainPercentageBar.swift */; };
+		9DF9FF031C81D73800A695C2 /* MainDislikeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9FF021C81D73800A695C2 /* MainDislikeBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		9DF9FEF71C81451700A695C2 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		9DF9FEF91C81608300A695C2 /* PointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsViewController.swift; sourceTree = "<group>"; };
 		9DF9FEFB1C81608F00A695C2 /* InfoPointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPointsViewController.swift; sourceTree = "<group>"; };
+		9DF9FF001C81D69D00A695C2 /* MainPercentageBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPercentageBar.swift; sourceTree = "<group>"; };
+		9DF9FF021C81D73800A695C2 /* MainDislikeBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDislikeBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 		9DF9FECB1C81426E00A695C2 = {
 			isa = PBXGroup;
 			children = (
+				9DF9FF001C81D69D00A695C2 /* MainPercentageBar.swift */,
+				9DF9FF021C81D73800A695C2 /* MainDislikeBar.swift */,
 				9DF9FED61C81426E00A695C2 /* eWaste */,
 				9DF9FEEB1C81426E00A695C2 /* eWasteTests */,
 				9DF9FED51C81426E00A695C2 /* Products */,
@@ -207,6 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF9FF011C81D69D00A695C2 /* MainPercentageBar.swift in Sources */,
+				9DF9FF031C81D73800A695C2 /* MainDislikeBar.swift in Sources */,
 				9DF9FEFC1C81608F00A695C2 /* InfoPointsViewController.swift in Sources */,
 				9DF9FEF81C81451700A695C2 /* LocationViewController.swift in Sources */,
 				9DF9FEFA1C81608300A695C2 /* PointsViewController.swift in Sources */,
