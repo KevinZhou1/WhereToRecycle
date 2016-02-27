@@ -14,7 +14,7 @@ class LocationViewController: UIViewController, UIPickerViewDataSource, UIPicker
     @IBOutlet weak var pickerView: UIPickerView!
     
     
-    var pickerDataSource = ["Amherst", "Belchertown", "Pelham", "Northhampton", "Hadley"];
+    var pickerDataSource = ["Amherst", "Belchertown", "Pelham", "Northhampton", "Hadley", "Leverett", "Sunderland"];
     
     override func viewDidLoad() {
         super.viewDidLoad()

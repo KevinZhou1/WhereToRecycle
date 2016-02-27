@@ -14,6 +14,8 @@
 		9DF9FEE21C81426E00A695C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9FEE01C81426E00A695C2 /* LaunchScreen.storyboard */; };
 		9DF9FEED1C81426E00A695C2 /* eWasteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9FEEC1C81426E00A695C2 /* eWasteTests.swift */; };
 		9DF9FEF81C81451700A695C2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9FEF71C81451700A695C2 /* LocationViewController.swift */; };
+		9DF9FEFA1C81608300A695C2 /* PointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9FEF91C81608300A695C2 /* PointsViewController.swift */; };
+		9DF9FEFC1C81608F00A695C2 /* InfoPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9FEFB1C81608F00A695C2 /* InfoPointsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		9DF9FEEC1C81426E00A695C2 /* eWasteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eWasteTests.swift; sourceTree = "<group>"; };
 		9DF9FEEE1C81426E00A695C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DF9FEF71C81451700A695C2 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		9DF9FEF91C81608300A695C2 /* PointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsViewController.swift; sourceTree = "<group>"; };
+		9DF9FEFB1C81608F00A695C2 /* InfoPointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPointsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				9DF9FED71C81426E00A695C2 /* AppDelegate.swift */,
 				9DF9FED91C81426E00A695C2 /* ViewController.swift */,
 				9DF9FEDB1C81426E00A695C2 /* Main.storyboard */,
+				9DF9FEF91C81608300A695C2 /* PointsViewController.swift */,
+				9DF9FEFB1C81608F00A695C2 /* InfoPointsViewController.swift */,
 				9DF9FEF71C81451700A695C2 /* LocationViewController.swift */,
 				9DF9FEDE1C81426E00A695C2 /* Assets.xcassets */,
 				9DF9FEE01C81426E00A695C2 /* LaunchScreen.storyboard */,
@@ -201,7 +207,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF9FEFC1C81608F00A695C2 /* InfoPointsViewController.swift in Sources */,
 				9DF9FEF81C81451700A695C2 /* LocationViewController.swift in Sources */,
+				9DF9FEFA1C81608300A695C2 /* PointsViewController.swift in Sources */,
 				9DF9FEDA1C81426E00A695C2 /* ViewController.swift in Sources */,
 				9DF9FED81C81426E00A695C2 /* AppDelegate.swift in Sources */,
 			);
