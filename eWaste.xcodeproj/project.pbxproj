@@ -13,6 +13,7 @@
 		9DF9FEDF1C81426E00A695C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9FEDE1C81426E00A695C2 /* Assets.xcassets */; };
 		9DF9FEE21C81426E00A695C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9FEE01C81426E00A695C2 /* LaunchScreen.storyboard */; };
 		9DF9FEED1C81426E00A695C2 /* eWasteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9FEEC1C81426E00A695C2 /* eWasteTests.swift */; };
+		9DF9FEF81C81451700A695C2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9FEF71C81451700A695C2 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		9DF9FEE81C81426E00A695C2 /* eWasteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eWasteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF9FEEC1C81426E00A695C2 /* eWasteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eWasteTests.swift; sourceTree = "<group>"; };
 		9DF9FEEE1C81426E00A695C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF9FEF71C81451700A695C2 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				9DF9FED71C81426E00A695C2 /* AppDelegate.swift */,
 				9DF9FED91C81426E00A695C2 /* ViewController.swift */,
 				9DF9FEDB1C81426E00A695C2 /* Main.storyboard */,
+				9DF9FEF71C81451700A695C2 /* LocationViewController.swift */,
 				9DF9FEDE1C81426E00A695C2 /* Assets.xcassets */,
 				9DF9FEE01C81426E00A695C2 /* LaunchScreen.storyboard */,
 				9DF9FEE31C81426E00A695C2 /* Info.plist */,
@@ -146,6 +149,7 @@
 				TargetAttributes = {
 					9DF9FED31C81426E00A695C2 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 3G8XW5RFTE;
 					};
 					9DF9FEE71C81426E00A695C2 = {
 						CreatedOnToolsVersion = 7.2;
@@ -197,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF9FEF81C81451700A695C2 /* LocationViewController.swift in Sources */,
 				9DF9FEDA1C81426E00A695C2 /* ViewController.swift in Sources */,
 				9DF9FED81C81426E00A695C2 /* AppDelegate.swift in Sources */,
 			);
@@ -325,10 +330,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = eWaste/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.eWaste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -336,10 +345,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = eWaste/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.eWaste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
