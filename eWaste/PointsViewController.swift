@@ -10,9 +10,15 @@ import UIKit
 
 class PointsViewController: UIViewController {
 
+    //MARK: OUTLETS
+    
+    @IBOutlet weak var locationName: UILabel!
+    
+    var textOne = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        locationName.text = textOne + " High School"
         // Do any additional setup after loading the view.
     }
 

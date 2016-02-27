@@ -14,15 +14,35 @@ class LocationViewController: UIViewController, UIPickerViewDataSource, UIPicker
     @IBOutlet weak var pickerView: UIPickerView!
     
     
-    var pickerDataSource = ["Amherst", "Belchertown", "Pelham", "Northhampton", "Hadley", "Leverett", "Sunderland"];
+    var pickerDataSource = ["Amherst", "Belchertown", "Pelham", "Northhampton", "Hadley", "Leverett", "Sunderland", "Hatfield", "Holyoke"];
+    
+    var row = Int();
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        pickerDataSource.sortInPlace()
         self.pickerView.dataSource = self;
         self.pickerView.delegate = self;
 
         // Do any additional setup after loading the view.
+        row = pickerView.selectedRowInComponent(0)
+        
     }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let DestViewController : PointsViewController  = segue.destinationViewController as! PointsViewController
+        
+        //Initialize the text fields in the other view
+        DestViewController.textOne = pickerDataSource[pickerView.selectedRowInComponent(0)]
+        
+        
+        
+        
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

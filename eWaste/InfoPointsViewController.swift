@@ -10,6 +10,11 @@ import UIKit
 
 class InfoPointsViewController: UIViewController {
 
+    //MARK: OUTLETS
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
