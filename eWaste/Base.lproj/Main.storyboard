@@ -83,33 +83,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mt-D3-zZK">
-                                <rect key="frame" x="66" y="114" width="75" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mt-D3-zZK">
+                                <rect key="frame" x="66" y="114" width="49" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKI-cQ-KCI">
-                                <rect key="frame" x="247" y="449" width="73" height="30"/>
+                                <rect key="frame" x="0.0" y="0.0" width="73" height="30"/>
                                 <state key="normal" title="Points Info"/>
                                 <connections>
                                     <segue destination="G2B-Hr-F6G" kind="show" id="lSt-aK-1zH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyA-h5-ElR">
-                                <rect key="frame" x="60" y="169" width="48" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyA-h5-ElR">
+                                <rect key="frame" x="66" y="164" width="110" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Points Needed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ll-yE-3wy">
-                                <rect key="frame" x="60" y="233" width="112" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points Needed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ll-yE-3wy">
+                                <rect key="frame" x="66" y="211" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reward" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK8-hP-6xd">
-                                <rect key="frame" x="50" y="289" width="58" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reward" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK8-hP-6xd">
+                                <rect key="frame" x="66" y="253" width="58" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -117,12 +117,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="VK8-hP-6xd" firstAttribute="top" secondItem="6ll-yE-3wy" secondAttribute="bottom" constant="21" id="6aG-6C-4CL"/>
+                            <constraint firstItem="yyA-h5-ElR" firstAttribute="leading" secondItem="Wai-iI-KEu" secondAttribute="leadingMargin" constant="46" id="7e9-bj-WXy"/>
+                            <constraint firstItem="6ll-yE-3wy" firstAttribute="top" secondItem="yyA-h5-ElR" secondAttribute="bottom" constant="26" id="H0B-jg-cLX"/>
+                            <constraint firstItem="yyA-h5-ElR" firstAttribute="top" secondItem="6mt-D3-zZK" secondAttribute="bottom" constant="26" id="fR8-Se-uZg"/>
+                            <constraint firstItem="VK8-hP-6xd" firstAttribute="leading" secondItem="Wai-iI-KEu" secondAttribute="leadingMargin" constant="46" id="nfv-UH-Kc0"/>
                             <constraint firstItem="6mt-D3-zZK" firstAttribute="leading" secondItem="Wai-iI-KEu" secondAttribute="leadingMargin" constant="46" id="pAV-F1-qd1"/>
                             <constraint firstItem="6mt-D3-zZK" firstAttribute="top" secondItem="21h-6Z-cXI" secondAttribute="bottom" constant="50" id="ppn-A1-xx1"/>
+                            <constraint firstItem="6ll-yE-3wy" firstAttribute="leading" secondItem="Wai-iI-KEu" secondAttribute="leadingMargin" constant="46" id="uoM-M2-1Og"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="locationName" destination="6mt-D3-zZK" id="1Yh-CN-Bkv"/>
+                        <outlet property="points" destination="yyA-h5-ElR" id="zp0-3v-fPj"/>
+                        <outlet property="requiredPoints" destination="6ll-yE-3wy" id="5lv-S1-6rg"/>
+                        <outlet property="rewardText" destination="VK8-hP-6xd" id="N4T-5Q-7Vh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6K4-lk-v84" userLabel="First Responder" sceneMemberID="firstResponder"/>
