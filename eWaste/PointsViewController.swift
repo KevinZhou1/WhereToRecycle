@@ -60,7 +60,7 @@ class PointsViewController: UIViewController {
         
         var pointsNeeded = ["1000", "2500", "6000", "10000", "15000", "20000"];
         
-        var rewards = ["Reward 0", "Reward 1", "Reward 2", "Reward 3", "Reward 4", "Reward 5"]
+        var rewards = ["Reward: Luncheon", "Reward: Carnival Day", "Reward: Engineering Expo Day", "Reward: Computer Science Classes", "Reward: 2 Hackathons Held", "Reward: Updating Computer Lab"]
         
         
        
